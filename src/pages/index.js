@@ -102,9 +102,7 @@ const compliments = [
 ]
 
 const IndexPage = () => {
-  const [phrase, setPhrase] = useState(
-    compliments[Math.floor(Math.random() * compliments.length)]
-  )
+  const [phrase, setPhrase] = useState("")
   return (
     <Layout>
       <div className="text-center m-5">
@@ -112,7 +110,7 @@ const IndexPage = () => {
       </div>
       <div className="text-center justify-content-center">
         <div
-          className="btn btn-primary btn-lg m-5 fixed-bottom"
+          className="btn btn-primary btn-lg m-5 fixed-bottom "
           onClick={() => {
             setPhrase(
               compliments[Math.floor(Math.random() * compliments.length)]
